@@ -23,7 +23,7 @@ h1 {
     flex-direction: column;
     align-items: center;
 }
-#headBar {
+#headBar, #headbarSpacer {
     position: fixed;
     display: flex;
     width: 100%;
@@ -32,6 +32,9 @@ h1 {
     max-height: 70px;
     background-color: #1d1d1d;
     align-items: center;
+}
+#headbarSpacer {
+    position: relative;
 }
 .navLink, .navLink:visited {
     text-decoration: none;
