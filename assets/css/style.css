@@ -1,10 +1,10 @@
 @font-face {
     font-family: "SpaceGroteskRegular";
-    src: url("../../fonts/SpaceGrotesk-Regular.ttf") format("truetype");
+    src: url("../fonts/SpaceGrotesk-Regular.ttf") format("truetype");
 }
 @font-face {
     font-family: "SpaceGroteskBold";
-    src: url("../../fonts/SpaceGrotesk-Bold.ttf") format("truetype");
+    src: url("../fonts/SpaceGrotesk-Bold.ttf") format("truetype");
 }
 
 body {
