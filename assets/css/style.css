@@ -1,0 +1,169 @@
+@font-face {
+    font-family: "SpaceGroteskRegular";
+    src: url("../../fonts/SpaceGrotesk-Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: "SpaceGroteskBold";
+    src: url("../../fonts/SpaceGrotesk-Bold.ttf") format("truetype");
+}
+
+body {
+    background-color: #101010;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: SpaceGroteskRegular, sans-serif;
+    color: #f4f4f4;
+}
+h1 {
+    font-family: SpaceGroteskBold, sans-serif;
+}
+#wrapper {
+    padding: 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#headBar {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 20vh;
+    min-height: 50px;
+    max-height: 70px;
+    background-color: #1d1d1d;
+    align-items: center;
+}
+.navLink, .navLink:visited {
+    text-decoration: none;
+    display: flex;
+    vertical-align: middle;
+    padding: 10%;
+    height: 100%;
+    width: 100%;
+    color: #f4f4f4;
+    font-family: SpaceGroteskBold, sans-serif;
+    box-sizing: border-box;
+}
+#datum {
+    margin-left: 5%;
+}
+
+.navLink:hover, .navCurrent:hover {
+    background-color: #944638;
+    color: #1d1d1d;
+    transition: 150ms;
+}
+.navMenu {
+    background-color: #101010;
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 30%;
+    max-width: 200px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    border-top: 1px solid #ddd;
+}
+.navMenu.active {
+    display: block;
+}
+.navCurrent {
+    display: flex;
+    margin-left: auto;
+    box-sizing: border-box;
+    padding: 3vw;
+    padding-top:0;
+    padding-bottom: 0;
+    height: 20vh;
+    min-height: 60px;
+    max-height: 70px;
+    width: 30vw;
+    max-width: 200px;
+    align-items: center;
+    justify-content: center;
+    font-family: SpaceGroteskBold;
+}
+
+.navListItem:hover {
+    background-color: #944638;
+}
+#logo {
+    width: 15vw;
+    max-width: 60px;
+    max-height: 60px;
+    aspect-ratio: 1;
+    padding-left: 3vw;
+
+}
+.iFrameWrapper {
+    width: 100%;
+    margin-top: 5vw;
+}
+.textImgWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+.band {
+    display: flex;
+    flex-direction: column;
+    padding: 5vw;
+    width: 50%;
+    box-sizing: border-box;
+    align-items: center;
+}
+.bandLogo {
+    width: 100%;
+    max-width: 300px;
+
+}
+.bandDescription {
+    width: 80%;
+    max-width: 700px; 
+}
+.content {
+    display: flex;
+    padding: 5vw;
+    padding-top: 3vw;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+#navMenuW {
+    display: none;
+    font-family: SpaceGroteskBold;
+    color: #f4f4f4;
+    margin-left: auto;
+    min-width: 50%;
+}
+.navLinkW, navLinkW:visited {
+    display: flex;
+    text-decoration: none;
+    color: #f4f4f4;
+    padding: 5%;
+    width: 25%;
+    box-sizing: border-box;
+    height: 20vh;
+    min-height: 60px;
+    max-height: 70px;
+    align-items: center;
+    justify-content: center;
+}
+.navLinkW:hover {
+    background-color: #944638;
+    color: #101010;
+}
+@media (min-width: 768px) {
+    .navCurrent, .navMenu{
+        display: none;
+    }
+    #navMenuW {
+        display: flex;
+    }
+}
