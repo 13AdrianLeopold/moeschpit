@@ -19,6 +19,7 @@ h1 {
 }
 #wrapper {
     padding: 5vw;
+    padding-top: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
